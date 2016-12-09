@@ -36,103 +36,125 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-medium"
                     android:text="@string/team_a"
-                    android:textColor="#616161"
-                    android:fontFamily="sans-serif-medium" />
+                    android:textColor="#616161" />
 
                 <TextView
                     android:id="@+id/score_teamA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/score"
-                    android:textSize="56sp"
                     android:layout_marginBottom="24dp"
                     android:fontFamily="sans-serif-light"
-                    android:textColor="#000000" />
+                    android:text="@string/score"
+                    android:textColor="#000000"
+                    android:textSize="56sp" />
 
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
                     android:onClick="one_point_A"
-                    android:text="@string/one_point"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginBottom="8dp" />
+                    android:text="@string/one_point" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
                     android:onClick="two_point_A"
-                    android:text="@string/two_point"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginBottom="8dp" />
+                    android:text="@string/two_point" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="three_point_A"
-                    android:text="@string/three_point"
                     android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp" />
+                    android:layout_marginRight="24dp"
+                    android:onClick="three_point_A"
+                    android:text="@string/three_point" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginBottom="16dp"></View>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/three_point_total"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginRight="24dp"
-                        android:layout_marginBottom="8dp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/left_three_points"
-                        android:text="0"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/two_point_total"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginRight="24dp"
-                        android:layout_marginBottom="8dp" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/left_two_points"
-                        android:text="0"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/darker_gray"></View>
 
-                        android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/left_three_points"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/free_throw_total"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="24dp"
-                        android:layout_marginRight="24dp" />
+                        android:layout_marginRight="24dp"
+                        android:layout_weight="2"
+                        android:text="@string/three_point_total" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/left_two_points"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:text="0" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_weight="2"
+                        android:text="@string/two_point_total" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
                         android:id="@+id/left_freeThrow"
-                        android:text="0"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textAlignment="viewEnd"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_weight="2"
+                        android:text="@string/free_throw_total" />
+
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -154,103 +176,124 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-medium"
                     android:text="@string/team_b"
-                    android:textColor="#616161"
-                    android:fontFamily="sans-serif-medium" />
+                    android:textColor="#616161" />
 
                 <TextView
                     android:id="@+id/score_teamB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/score"
-                    android:textSize="56sp"
                     android:layout_marginBottom="24dp"
                     android:fontFamily="sans-serif-light"
-                    android:textColor="#000000" />
+                    android:text="@string/score"
+                    android:textColor="#000000"
+                    android:textSize="56sp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
                     android:onClick="one_point_B"
-                    android:text="@string/one_point"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp" />
+                    android:text="@string/one_point" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
                     android:onClick="two_point_B"
-                    android:text="@string/two_point"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp" />
+                    android:text="@string/two_point" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="three_point_B"
-                    android:text="@string/three_point"
                     android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp" />
+                    android:layout_marginRight="24dp"
+                    android:onClick="three_point_B"
+                    android:text="@string/three_point" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginBottom="16dp"></View>
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/darker_gray"></View>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/three_point_total"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginRight="24dp"
-                        android:layout_marginBottom="8dp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/right_three_points"
-                        android:text="0"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/two_point_total"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginRight="24dp"
-                        android:layout_marginBottom="8dp" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/right_two_points"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
                         android:text="0"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
 
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/free_throw_total"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="24dp"
-                        android:layout_marginRight="24dp" />
+                        android:layout_marginRight="24dp"
+                        android:layout_weight="2"
+                        android:text="@string/three_point_total" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/right_two_points"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:text="0" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_weight="2"
+                        android:text="@string/two_point_total" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
                         android:id="@+id/right_freeThrow"
-                        android:text="0"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textAlignment="viewEnd"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_weight="2"
+                        android:text="@string/free_throw_total" />
+
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -258,9 +301,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
             android:layout_gravity="center_horizontal"
-
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
             android:onClick="reset"
             android:text="@string/reset" />
     </LinearLayout>
