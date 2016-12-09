@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Court Counter</string>
-    <string name="team_a">Team A</string>
-    <string name="team_b">Team B</string>
+    <string name="app_name">Game Time</string>
+    <string name="team_a">Boston Astros</string>
+    <string name="team_b">Memphis Eagles</string>
     <string name="score">0</string>
     <string name="one_point">Free Throw</string>
     <string name="two_point">+2 Point</string>
